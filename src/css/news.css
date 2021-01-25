@@ -1,0 +1,82 @@
+.news {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-left: 0px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align : left;
+}
+
+.container {
+  margin-left: 0px;
+}
+
+body {
+  background: white;
+}
+
+.divHeight {
+  max-height: 50%;
+}
+.filters {
+  margin-top: 20px;
+  display: flex;  
+  font-size: smaller;
+}
+.filterMargin{
+  margin-left: 15px;
+}
+.filterMarginSmall{
+  margin-left: 5px;
+}
+.industry {
+  width: 180px;
+}
+.searchText {
+  border-color: gray;
+}
+.count {
+  color: blue;
+  display: flex;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+.spanData {
+  text-align: right;
+}
+
+#examples {
+  margin: 20px;
+}
+
+.react-switch {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+pre {
+  padding: 0 10px;
+  background: #eee;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
