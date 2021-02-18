@@ -1,8 +1,8 @@
 import React from 'react';
 import NewsData from '../assets/data/Newzdata.json';
 import '../css/news.css';
-//import Toggle from 'react-toggle'
-//import '../css/toggle.css';
+import Toggle from 'react-toggle'
+import '../css/toggle.css';
 import PositiveIndicator from "../assets/media/indicator/positive.png";
 import NegativeIndicator from "../assets/media/indicator/negative.png";
 
@@ -201,7 +201,7 @@ export default class News extends React.Component {
             {
             // Toggle button for Upward
             }
-            {/* <label html-for="upward"><span className = "filters filterMargin">Upward</span></label>
+             <label html-for="upward"><span className = "filters filterMargin">Upward</span></label>
             <Toggle
               id='upward'
               className = "filters filterMarginSmall"
@@ -251,7 +251,7 @@ export default class News extends React.Component {
             <Toggle
               id='spac-news'
               className = "filters filterMarginSmall"
-              onChange={this.handleSPAC} /> */}
+              onChange={this.handleSPAC} />
           </div>
         </div>
         <div>

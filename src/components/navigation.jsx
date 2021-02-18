@@ -3,48 +3,52 @@ import React, { Component } from "react";
 export class Navigation extends Component {
   render() {
     return (
-      <nav id="menu" className="navbar navbar-default navbar-fixed-top">
-        <div className="container">
+      <div className="container">
+        <nav id="menu" class="navbar navbar-expand-md navbar-light navbar-fixed-top">      
           <div className="navbar-header">
-            <button
+            {/* <button
               type="button"
               className="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#bs-example-navbar-collapse-1"
             >
               {" "}
-              <span className="sr-only">Toggle 
+              <span className="sr-only"> 
               </span>{" "}
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
               <span className="icon-bar"></span>{" "}
-            </button>
+            </button> */}
+            
             <a className="navbar-brand" href="#page-top">
-              React Landing Page
+              Rising Stocks
             </a>{" "}
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
           </div>
 
-          <div
-            className="collapse navbar-collapse"
-            id="bs-example-navbar-collapse-1"
-          >
-            <ul className="nav navbar-nav navbar-right">
-              <li>
-                <a href="#features" className="page-scroll">
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul className="navbar-nav">
+              <li class="nav-item">
+                <a href="#features" class="nav-link">
                   Features
                 </a>
               </li>
-              {/* <li>
-                <a href="#about" className="page-scroll">
+              {/* <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>*/}
+              <li class="nav-item"> 
+                <a href="#about" className="nav-link">
                   About
                 </a>
               </li>
-              <li>
-                <a href="#services" className="page-scroll">
+              <li class="nav-item">
+                <a href="#services" className="nav-link">
                   Services
                 </a>
               </li>
-              <li>
+              {/*<li>
                 <a href="#portfolio" className="page-scroll">
                   Gallery
                 </a>
@@ -65,9 +69,9 @@ export class Navigation extends Component {
                 </a>
               </li> */}
             </ul>
-          </div>
-        </div>
-      </nav>
+          </div>        
+        </nav>
+      </div>
     );
   }
 }
