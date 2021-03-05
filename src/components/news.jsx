@@ -78,7 +78,7 @@ export default class News extends React.Component {
     //const { search } = this.state.search;
     //const uniqueIndustry = this.getUnique(NewsData, "Sector");
     let filteredData = NewsData;
-    if(this.state.search){
+    if(this.state.search!=null){
         filteredData = filteredData.filter((data) => {
           return (
             data.CompanyName.toLocaleLowerCase().indexOf( 
@@ -87,6 +87,15 @@ export default class News extends React.Component {
           );
         });
     }
+    // if(this.state.search!=null){
+    //   filteredData = filteredData.filter((data) => {
+    //     return (
+    //       data.Symbol.toLocaleLowerCase().indexOf( 
+    //         this.state.search.toLocaleLowerCase()
+    //       ) !== -1
+    //     );
+    //   });
+    // }
     if(this.state.ipoToggle){
       filteredData = filteredData.filter((data) => {
         return (
